@@ -1,4 +1,4 @@
-#pragma once //sorgt dafür, dass file nur einmal includiert wird
+#pragma once //sorgt dafÃ¼r, dass file nur einmal includiert wird
 
 class Datum{
 private:
