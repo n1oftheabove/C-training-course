@@ -29,30 +29,30 @@
 //#include"meinelokaleBib.h"
 #include <cstdlib> //for system("PAUSE")
 
-//********METHODEN DEKLARIEREN (Schnittstelle, Signatur, Kopf)
+//********DECLARE METHODS, method(Schnittstelle, Signatur, Kopf)
 
-double square(double x); /*Meine Methode heißt square, erwartet ein Double und gibt ein double zurueck;
-Konvention: Eigentlich klassen mit nouns, bezeichnung für Methoden als Verben.*/
+double square(double x); /*My method is named square, expects a double and outputs a double;
+convention: classes labeled by nouns, labeling for methods using verbs.*/
 
 int main()
 {
-	std::cout << "Hello World" << std::endl; /*was links und rechts von << steht ist Operand, << selbst ist Operator|
-	cout gehoert zum namespace std. Alternativ könnte man auch:
+	std::cout << "Hello World" << std::endl; /*what is placed left and right of << is operand, <<  is Operator|
+	cout belongs to namespace std. alternate usage:
 	using namespace std; 
-	vor int main() und std:: weglassen*/
+	then int main() and std:: can be left out*/
 	system("PAUSE"); //windows only, keeps programm running until keystroke
 
 	double x = square(7.0);
 	return 0;	
 }
 
-//cout und system sind Methoden. Man kann Methoden auch selbst schreiben.
+//cout and system are methods. Custom methods...
 
-//*******METHODEN DEFINIEREN (Implementieren)
+//*******Custom methods (Implementing)
 
 double square(double x){
 	//Algorithmus
 	double result;
 		result = x*x;
-		return result; //muss vom erklärten Datentyp (in dem fall double) sein
+		return result; //has to be of the declared datatype
 }
