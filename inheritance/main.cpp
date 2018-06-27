@@ -8,8 +8,8 @@ int main(){
 
 Person p1;
 Person p2("Hans", "Maier", 1960, 44787);
-//Datum d1(31,6,1970); //ungültig
-//Datum d2(30,6,1970); // ungültig
+//Datum d1(31,6,1970); //ungÃ¼ltig
+//Datum d2(30,6,1970); // ungÃ¼ltig
 p1.info();	//Max Mustermann, PLZ 12345, Geburtsjahr 1950
 p2.info();	//Hans Meier, PLZ 44787
 cout << "Alter: " << p2.getAlter() << endl;
