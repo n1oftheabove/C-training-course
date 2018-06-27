@@ -1,4 +1,4 @@
-// Beispiel für rekursion: Fakultaet
+// One example for recursion: Factorial function
 
 #include <iostream>
 
@@ -9,7 +9,7 @@ long long getFakultaetRek(int);
 
 int main2(){
 
-cout << "Bitte geben Sie eine Zahl ein . " << endl;
+cout << "Please enter a number . " << endl;
 int zahl;
 cin >> zahl;
 long long fakultaet = getFakultaet(zahl);
