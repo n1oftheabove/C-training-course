@@ -3,8 +3,8 @@
 using namespace std;
 
 //Operatoren
-	//Artimetische Operatoren + - * / ++ -- (sind mit allen numerischen Datentypen verknüpft)
-			//sind auch mit Datentypen verknüpft. Datentyp = {bestimmte Werte}+{Menge Operatoren}
+	//Artimetische Operatoren + - * / ++ -- (sind mit allen numerischen Datentypen verknÃ¼pft)
+			//sind auch mit Datentypen verknÃ¼pft. Datentyp = {bestimmte Werte}+{Menge Operatoren}
 	//Vergleichsoperatoren < > == <= >= !=
 	//Logische UND && ODER |
 
@@ -19,7 +19,7 @@ unsigned char isEven(int num); //Methode, die rausfinden soll ob Zahl grade oder
 int main(){
 	double x = 3.14;
 	int i = 23;
-	double y = (x-i) * 5; //Typzusammenführung -> Compiler konvertiert immer automatisch zum nächsthöheren Typ
+	double y = (x-i) * 5; //TypzusammenfÃ¼hrung -> Compiler konvertiert immer automatisch zum nÃ¤chsthÃ¶heren Typ
 	//(double - int)*int
 	//double * int
 	//double
