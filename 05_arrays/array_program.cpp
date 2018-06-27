@@ -30,13 +30,13 @@ cout << "Ihr Array lautet  "<< myarray[0]
 system("PAUSE");
 
 int option=0;
-cout << "Wähle eine Option  "<<endl;
+cout << "WÃ¤hle eine Option  "<<endl;
 cout << "-1- Maximum finden"<<endl;
 cout << "-2- Minimum finden"<<endl;
 cout << "-3- Anzahl der geraden Zahlen ermitteln"<<endl;
 
 if(!(cin >> option)){
-cout<< "Ungültige Eingabe\n"<<endl;
+cout<< "UngÃ¼ltige Eingabe\n"<<endl;
 return 1;
 }
 switch(option){
@@ -46,7 +46,7 @@ case 2 : cout << "Das Minimum ist "<< findmin(myarray) <<endl;
 break;
 case 3 : cout << "Die Anzahl der geraden Elemente im Array ist "<< counteven(myarray) <<endl;
 break;
-default: cout << "Ungültige Option\n"<<endl;
+default: cout << "UngÃ¼ltige Option\n"<<endl;
 }
 
 }
