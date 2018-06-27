@@ -1,7 +1,7 @@
 #include "person.h"
 #include "datum.h"
 #include <iostream>
-#include <time.h>	//für aktuelle Zeit
+#include <time.h>	//fÃ¼r aktuelle Zeit
 
 using namespace std;
 
@@ -79,7 +79,7 @@ void Person::setJahr(int jahr){
 	//cout << aktuellerTag << endl;
 
 	if (jahr < 1900 || jahr > aktuelleJahr){
-		cout << "Ungültiges Geburtsjahr." << endl;
+		cout << "UngÃ¼ltiges Geburtsjahr." << endl;
 		jahr = 1950;
 		}
 	this-> jahr = jahr;
@@ -95,7 +95,7 @@ void Person::setTag(int tag){
 
 void Person::setPlz(int plz){
 	if (plz < 1020 || plz > 99999){
-	cout << "Ungültige PLZ " << endl;
+	cout << "UngÃ¼ltige PLZ " << endl;
 	plz = 12345;
 	}
 	this->plz = plz;
