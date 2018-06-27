@@ -4,7 +4,7 @@
 using namespace std;
 
 //zwei dim-Arrays
-		//alle Eintr‰ge im Array im gleichen Typ
+		//alle Eintr√§ge im Array im gleichen Typ
 
 int main(){
 	int two_dim_a[4][5]={
