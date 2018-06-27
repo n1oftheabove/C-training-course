@@ -15,7 +15,7 @@ int main(){
 	// Anweisungen
 		// Anweisung1 ;
 		// Anweisung2 ;
-	// Anweisungsblöcke
+	// AnweisungsblÃ¶cke
 		// {
 		// Anweisung1;
 		// Anweisung2;
@@ -30,13 +30,13 @@ int main(){
 			int val={0};
 			cout << "Wert ungleich null eingeben: ";
 			cin >> val;
-			if(val){//checkt, ob val !=0, gibt dann true zurück, Bedingung der Schleife erfüllt
+			if(val){//checkt, ob val !=0, gibt dann true zurÃ¼ck, Bedingung der Schleife erfÃ¼llt
 				cout << val << endl;			//val wird ausgegeben
 			}
 		//anderes Beispiel
 			int val={0};
 			cout << "Wert ungleich null eingeben: ";
-				if(cin >> val){//checkt, ob die Eingabe von val über cin korrekt erfolgte (gültiger Ganzzahlwert)!
+				if(cin >> val){//checkt, ob die Eingabe von val Ã¼ber cin korrekt erfolgte (gÃ¼ltiger Ganzzahlwert)!
 				cout << val << endl;			//val wird ausgegeben
 			}
 		//bzw.
@@ -55,12 +55,12 @@ int main(){
 			cout << val << std::endl; 
 		}
 		else {
-			cout << "Ungültiger Wertebereich: " << val << endl;
+			cout << "UngÃ¼ltiger Wertebereich: " << val << endl;
 		}
-		//ternärer Operator: Bedingung ? Ausdruck1 : Ausdruck2
+		//ternÃ¤rer Operator: Bedingung ? Ausdruck1 : Ausdruck2
 	//Mehrfachverzweigung, Fallunterscheidung (SWITCH)
 		int choice={0};
-		cout<<"Bitte Sprache wählen\n";
+		cout<<"Bitte Sprache wÃ¤hlen\n";
 		cout<<"-1- Deutsch\n";
 		cout<<"-2-Englisch\n";
 		cout<<"-3-Spanisch\n";
@@ -76,14 +76,14 @@ int main(){
 				break;
 			case 3: cout << "Bienvenido\n";
 				break;
-			default: cout << choice << ":Ungültige Eingabe\n";
+			default: cout << choice << ":UngÃ¼ltige Eingabe\n";
 			}
 	//Mehrfachverzweigung, ELSE-IF
 		int choice={0};
-		cout<<"Bitte Sprache wählen\n";
+		cout<<"Bitte Sprache wÃ¤hlen\n";
 		cout<<"-1- Deutsch\n";
-		cout<<"-2-Englisch\n";
-		cout<<"-3-Spanisch\n";
+		cout<<"-2- Englisch\n";
+		cout<<"-3- Spanisch\n";
 		cout<<"Ihre Auswahl : ";
 		if(!(cin>>choice)){
 		cout<<"Fehler bei der Eingabe\n";
@@ -99,7 +99,7 @@ int main(){
 		cout << "Bienvenido\n";
 		}
 		else{
-			cout << choice << ": Ungültige Eingabe\n";
+			cout << choice << ": UngÃ¼ltige Eingabe\n";
 		}		
 }
 		
@@ -107,24 +107,24 @@ int main(){
 		//in C++11 vier Formen:
 			// kopfgesteuert
 				// while()
-			// fußgesteuert 
+			// fuÃŸgesteuert 
 				// do while()
-			//Zählschleife
+			//ZÃ¤hlschleife
 				// for()
 			//Mengenschleife (auch als foreach-Schleife benannt, range-basierte for-Schleife, neu in C++11)
 
 		// Inkrement (analog Dekrement)
 			//klassisch: var = var + 1;
 			//C++: var+=1; oder var++
-			//Unterschied Prä- oder Postfix, d.h. ++var oder var++: Bei var++ wird vorheriger Wert
-				// in Anweisung benutzt, bei ++var schon gleich der nächste Wert:
+			//Unterschied PrÃ¤- oder Postfix, d.h. ++var oder var++: Bei var++ wird vorheriger Wert
+				// in Anweisung benutzt, bei ++var schon gleich der nÃ¤chste Wert:
 					int var={1};
 					cout << var++ << endl1; //1
 					cout << var << endl;	//2
 					cout << ++var <<endl;	//3
 
 		//while()
-			// Schleifenrumpf mit Anweisungen wird solange wiederholt, wie die Schleifenbedingung true zurückgibt
+			// Schleifenrumpf mit Anweisungen wird solange wiederholt, wie die Schleifenbedingung true zurÃ¼ckgibt
 				int summe={0}, val={0}, n={0}, i={0};
 				cout << "Wie viele Werte wollen Sie addieren: ";
 				cin >> n;
@@ -137,9 +137,9 @@ int main(){
 					summe+=val;
 					++i;										//inkrementierung
 				}
-				cout << "Summe aller Werte: " << summe << endl; //gibt summe als Ergebnis aus, wenn Abbruchbedingung der Schleife erfüllt ist
+				cout << "Summe aller Werte: " << summe << endl; //gibt summe als Ergebnis aus, wenn Abbruchbedingung der Schleife erfÃ¼llt ist
 		//do while()
-			// Bedingung wird immer erst überprüft, nachdem Anweisungen ausgeführt wurden. D.h. auch, dass alle Anweisungen immer min. einmal ausgeführt werden
+			// Bedingung wird immer erst Ã¼berprÃ¼ft, nachdem Anweisungen ausgefÃ¼hrt wurden. D.h. auch, dass alle Anweisungen immer min. einmal ausgefÃ¼hrt werden
 				//einfaches Taschenrechner Beispiel
 				int calc={0}, val={0}, wahl={0};
 				cout << "Wert eingeben: ";
@@ -168,7 +168,7 @@ int main(){
 					}
 				}while(wahl !=0);
 
-		// Zählschleife FOR()
+		// ZÃ¤hlschleife FOR()
 			//for(INITIALISIERUNG; BEDINGUNG; AKTUALISIERUNG){Anweisung}
 				//Bsp. Programm, zeigt einfach an, der wievielte Schleifendurchlauf grade passiert
 				int ende={0};
@@ -180,5 +180,5 @@ int main(){
 				for(int count=0; count < ende; ++count){
 					cout << count + 1 << ". Schleifendurchlauf\n";
 				}
-		// continue-Anweisung: Beendet im Ggsatz zu break nur den aktuellen Schleifendurchlauf und springt zur Bedingung zurück
+		// continue-Anweisung: Beendet im Ggsatz zu break nur den aktuellen Schleifendurchlauf und springt zur Bedingung zurÃ¼ck
 }
