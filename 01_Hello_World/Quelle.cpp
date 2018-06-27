@@ -23,7 +23,6 @@
 	//1. Tabelle von primitiven Datentypen erstellen mit Eigenschaften
 	//2. Taschenrechner mit vier Grundrechnenarten programmieren
 
-//Hello World written by Florian Titze
 //8th of May 2014
 
 #include <iostream> //Bibliothek einbinden für I/O
