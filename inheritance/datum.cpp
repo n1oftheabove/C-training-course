@@ -1,6 +1,6 @@
 #include "datum.h"
 #include <iostream>
-#include <time.h>	//für aktuelle Zeit
+#include <time.h>	//fÃ¼r aktuelle Zeit
 
 using namespace std;
 
@@ -93,11 +93,11 @@ if (jahr % 4 == 0 && jahr % 100 != 0 || jahr % 400==0 ){
 	}
 return false;
 
-// Noch kürzer
+// Noch kÃ¼rzer
 // return jahr % 4 == 0 && jahr % 100 != 0 || jahr % 400;
 
 // jahr % 400 ans Ende setzen, weil das am unwahrscheinlichsten ist -> performanter!
-// A && B, B wird nicht mehr evaluiert wenn A false ist -> && is performanter. && und || heißen Kurzschlussoperatoren
+// A && B, B wird nicht mehr evaluiert wenn A false ist -> && is performanter. && und || heiÃŸen Kurzschlussoperatoren
 // & und | sind die einfacheren Operatoren
 }
 
