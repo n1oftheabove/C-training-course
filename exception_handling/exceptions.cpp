@@ -14,7 +14,7 @@ try{
 //kritischer code
 	Result = Divide(5,0);
 	} catch (const int &ex) {
-		cout << "Division durch null ist nich möglich!" << endl;
+		cout << "Division durch null ist nich mÃ¶glich!" << endl;
 	} 
 	//throw 2;	//aequivalent zu return
 		} 
