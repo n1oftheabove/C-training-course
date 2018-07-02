@@ -4,7 +4,7 @@
 //primitive Datentypen
 	//casting
 //Variable
-//compilierung --> Linken --> Ausführung
+//compilierung --> Linken --> AusfÃ¼hrung
 	//main Methode
 //Kontrollstrukturen
 //Methode (Funktionen) in c++
@@ -24,19 +24,19 @@
 	//delete operator, new operator
 	//dynamische Attribute, Pointer
 	
-	//wenn eine Klasse ein dynamisches Attribut hat, welche im Konstruktor mit new [] alloziert wird, braucht die Klasse einen dynamischen				Speicher, und es wird ein Destruktor benötigt. Für jedes new [] braucht es ein delete
+	//wenn eine Klasse ein dynamisches Attribut hat, welche im Konstruktor mit new [] alloziert wird, braucht die Klasse einen dynamischen				Speicher, und es wird ein Destruktor benÃ¶tigt. FÃ¼r jedes new [] braucht es ein delete
 
 //Heute: STACK und HEAP
-	//STACK: (default 1 MB groß) muss man vorher einstellen
+	//STACK: (default 1 MB groÃŸ) muss man vorher einstellen
 		// statische Objekte und lokale Variablen einer Methode gehen auf den STACK. Z.b. class Student st1; st1 ist statisch erzeugtes Objekt
-		// vor Programmieren muss man abschätzen, wie viele Statische Objekte man im Code hat
+		// vor Programmieren muss man abschÃ¤tzen, wie viele Statische Objekte man im Code hat
 		// lokale Variable belegen innerhalb ihrer Methode einen Anteil im Speicher. Je mehr Methoden man also aufgerufen hat, desto voller kann also der Speicher sein 
-		// statische Objekte sind nur innerhalb ihrer übergeordneten Methode sichtbar
-	//HEAP: Größer, auch "dynamic memory" genannt.
+		// statische Objekte sind nur innerhalb ihrer Ã¼bergeordneten Methode sichtbar
+	//HEAP: GrÃ¶ÃŸer, auch "dynamic memory" genannt.
 		// dynamische Erzeugung class Student *st2; st2 ist dynamisch erzeugtes Objekt. st2 = new Student;
 		// dynamisch erzeugte Objekte werden auf dem Heap angelegt
-		// dynamisch erzeugte Objekte sollen in allen Methoden sichtbar sein, HEAP ist also ein Speicherbereich, der für globale Daten reserviert ist
-		// Größe des HEAPS ist nur durch den im System verfügbaren Speicher begrenzt
+		// dynamisch erzeugte Objekte sollen in allen Methoden sichtbar sein, HEAP ist also ein Speicherbereich, der fÃ¼r globale Daten reserviert ist
+		// GrÃ¶ÃŸe des HEAPS ist nur durch den im System verfÃ¼gbaren Speicher begrenzt
 		// der Zeiger selbst ist aber ein statisches Objekt und wird auf dem Stack hinterlegt
 
 #include<iostream>
@@ -62,7 +62,7 @@ class Student st1;		//statisch
 class Student *st2;		//dynamisch
 st2 = new Student;
 st2 -> methode();		//nicht Punktoperator!
-(*st2).methode();		//äquivalenter Weg
+(*st2).methode();		//Ã¤quivalenter Weg
 
 
 {
@@ -73,12 +73,12 @@ class Student st1;		//statisch
 {
 	class Student martin;
 	class Student steffan;	//Konstruktor instanziert erst Martin, dann Steffan (auf STACK)
-} //Destruktor räumt dann umgekehrt Speicher frei: Erst Steffan, dann martin
+} //Destruktor rÃ¤umt dann umgekehrt Speicher frei: Erst Steffan, dann martin
 
 {
 	class Student *a = new Student[10];		//erzeugt 10 Objekte von Klasse Student
 	
-	delete [] a;		//löscht wieder alle (in umgekehrter Reihenfolge). die delete-Methode ist wichtig, weil sonst wird nur der Zeiger entfernt!
+	delete [] a;		//lÃ¶scht wieder alle (in umgekehrter Reihenfolge). die delete-Methode ist wichtig, weil sonst wird nur der Zeiger entfernt!
 }
 
 
@@ -87,8 +87,8 @@ class Student *t;
 t = new Student;
 t->methode();
 (*t).methode();
-//delete t; //steht dies hier, wird sofort an dieser Stelle wird der Destruktor aufgerufen und auch das Objekt t gelöscht 
-}	//hier wird der Destruktor nicht aufgerufen, weil der Destruktor nur den STACK bereinigt. Es wird nach verlassen der Klammer nur der Zeiger gelöscht
+//delete t; //steht dies hier, wird sofort an dieser Stelle wird der Destruktor aufgerufen und auch das Objekt t gelÃ¶scht 
+}	//hier wird der Destruktor nicht aufgerufen, weil der Destruktor nur den STACK bereinigt. Es wird nach verlassen der Klammer nur der Zeiger gelÃ¶scht
 
 
 system("pause");
