@@ -42,7 +42,7 @@ void output(){
 int main(){
 
 class Student s1;
-cout << "geben Sie für den Stundente ein:" <<endl;
+cout << "geben Sie fÃ¼r den Stundente ein:" <<endl;
 cout << "den Namen: "<<endl;
 cin >> s1.name;
 cout << "die Matrikelnummer: "<<endl;
