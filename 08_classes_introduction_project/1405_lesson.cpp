@@ -17,7 +17,7 @@ struct student_s{
 };
 
 class Student{		//Regel: nur legale Identifiers verwenden (keine Variablennamen,
-					// keine Ziffern am Anfang, ...), Konvention: Klassen mit Groﬂbuchstaben, Methoden mit Groﬂbuchstaben
+					// keine Ziffern am Anfang, ...), Konvention: Klassen mit Gro√übuchstaben, Methoden mit Gro√übuchstaben
 					//Zugriff auf Elementvariable: objektname.elementname
 					// was kann eine Klasse mehr als ein STRUCT? Klassen enthalten noch VERHALTEN, d.h. von Operationen (METHODEN)
 					// 
@@ -27,14 +27,14 @@ public:				//Access-Modifier. Wenn hier nix steht: Default = Public
 	int matrknr;
 	// Konstruktoren: Erzeugen eine konkrete Instanz aus einer Klasse
 public:
-	void output(){   //hat kein R¸ckgabewert
+	void output(){   //hat kein R√ºckgabewert
 		cout<<mtrknr<< "--->" <<vorname<<" "<< name<<endl;
 	}
 
 };
 
 //STRUCT
-	// Motivation: z.b. array verlangt f¸r jeden Eintrag den gleichen Datentypen. Es gibt aber auch Problemstellungen, die utnerschiedliche erfordern. Lˆsung:
+	// Motivation: z.b. array verlangt f√ºr jeden Eintrag den gleichen Datentypen. Es gibt aber auch Problemstellungen, die utnerschiedliche erfordern. L√∂sung:
 int main(){
 
 struct student_s s;
@@ -64,14 +64,14 @@ system("PAUSE");
 
 
 
-// Klassen genau ‰hnlich. Wenn man aber nur arrays ersetzen mˆchte, kann man aber bei struct bleiben!
+// Klassen genau √§hnlich. Wenn man aber nur arrays ersetzen m√∂chte, kann man aber bei struct bleiben!
 
 
 
 /*
 class Klassenname{
 	Datentyp elementName;
-	r¸ckgabewertdatentyp methodenname(parameter){
+	r√ºckgabewertdatentyp methodenname(parameter){
 	Anweisungsblock;
 							}
 };
@@ -80,16 +80,16 @@ class Klassenname{
 
 // Grundlagen zur Klassen
 	//Prozedurale (oder auch strukturierte/imperative) Programmierung:
-		// *FUNKTION schreiben, der Wert(e) (DATEN) eingegeben werden, und die Wert zur¸ckgibt
-		// *Lˆsung des Problems heiﬂt Algorithmus
+		// *FUNKTION schreiben, der Wert(e) (DATEN) eingegeben werden, und die Wert zur√ºckgibt
+		// *L√∂sung des Problems hei√üt Algorithmus
 	//Objektorientierte Programmierung
 		//Ziel: Daten und Funktion zu einer Einheit zusammenzufassen
 		//Funktionen fremder Objekte ist es nicht erlaubt, diese Daten zu manipulieren
 		//Eigentlich Entprechung mit Objekten in der realen Welt:
 			//OBJEKT Auto: DATEN Farbe, Leistung, Geschwindigkeit, Gewicht,... METHODEN bremsen(), lenken(), hupen(), fahren()
-		//KLASSEN: Zur Verwaltung von gleichartigen Objekten. Autobeispiel: Die Klasse w‰re etwa der Konstruktionsplan des Autos
-			//sind Baupl‰ne f¸r Objekte, welche erst zur Laufzeit des Programms als Instanz erstellt werden.
-			//z.b. kˆnnen zwei bestimmte Autos mit individuellen Eigenschaften INSTANZEN von "class Auto" sein
+		//KLASSEN: Zur Verwaltung von gleichartigen Objekten. Autobeispiel: Die Klasse w√§re etwa der Konstruktionsplan des Autos
+			//sind Baupl√§ne f√ºr Objekte, welche erst zur Laufzeit des Programms als Instanz erstellt werden.
+			//z.b. k√∂nnen zwei bestimmte Autos mit individuellen Eigenschaften INSTANZEN von "class Auto" sein
 			// belegt noch keinen Speicher als solche, sondern erst, wenn ein Objekt dieser Klasse instanziert haben
 		
 		// Klasse realisieren (Bauplan):
