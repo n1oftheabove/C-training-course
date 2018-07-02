@@ -1,4 +1,4 @@
-//2105 florian titze
+//21st of May 2014
 //ein kleiner getraenkeautomat
 
 #include<iostream>
@@ -33,7 +33,7 @@ cin >> select;
 		break;
 	case 0: return 1;
 		break;
-	default: cout << "ungültige Eingabge" << endl;
+	default: cout << "ungÃ¼ltige Eingabge" << endl;
 		}
 	}
 return 0;
