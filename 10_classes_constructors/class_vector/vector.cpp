@@ -1,7 +1,7 @@
-// 22052014
-// Programm, welches zwei Vektoren zur Eingabe verlangt,
-//  und daraus relevante Größen den lin. Algebra berechent
-// (Skalar-, Vektorprodukt-, Betrag- ,etc...)
+// 22nd May 2014
+// Programm that demands two variables and out of that
+//  calculates relevant output of linear Algebra
+// (Scalar-, Vector-product, magnitude of a vector ,etc...)
 
 #include <iostream>
 #include <cstdlib>
@@ -89,11 +89,11 @@ class Vektor v1(a,b,c);
 class Vektor v2(d,e,f);
 cout << "Ihr Vektor 1: (" <<a<<","<<b<<","<<c<<")"<<endl;
 v1.betrag(v1);
-cout << "Hat die Länge: "<< endl;
+cout << "Hat die LÃ¤nge: "<< endl;
 v1.outputbetr();
 cout << "Ihr Vektor 2: (" <<d<<","<<e<<","<<f<<")"<<endl;
 v2.betrag(v2);
-cout << "Hat die Länge: "<< endl;
+cout << "Hat die LÃ¤nge: "<< endl;
 v2.outputbetr();
 
 class Vektor result(0,0,0);
