@@ -1,10 +1,10 @@
 #include <iostream>
 #include <cstdlib>
-#include <string> //für C++11 state of the art strings
+#include <string> //fÃ¼r C++11 state of the art strings
 using namespace std;
 
 //strcpy_s ist Microsoft
-//strcpy ist unssafe, da es über das Ende von destination hinaus schreibt
+//strcpy ist unssafe, da es Ã¼ber das Ende von destination hinaus schreibt
 //std::string in C++ verwenden, statt C-Style-Strings!
 
 int main(){
@@ -21,8 +21,8 @@ cout << "str2: " << str2 <<endl;
 
 cout << "einen String bitte!"<<endl;
 string str05;
-getline(cin, str05);	//lieber Strings immer so einlesen, da bei cin >> variable keine Längenüberprüfung!
-						//außerdem bringt cin beim ersten Leerzeichen ab!
+getline(cin, str05);	//lieber Strings immer so einlesen, da bei cin >> variable keine LÃ¤ngenÃ¼berprÃ¼fung!
+						//auÃŸerdem bringt cin beim ersten Leerzeichen ab!
 cout << str05 << endl;
 
 
@@ -30,12 +30,12 @@ cout << str05 << endl;
 		//bezeichner.front()	adressiert String an erster Stelle
 		//bezeichner.back()		adressiert String an letzter Stelle
 		//bezeichner.at(x)		adressiert String an Stelle x
-		//bezeichner.size()		gibt Länge des Strings aus
+		//bezeichner.size()		gibt LÃ¤nge des Strings aus
 
 cout << "Erster Buchstabe " << str05.front() << endl;
 cout << "Letzter Buchstabe " << str05.back() << endl;
 cout << "3. Buchstabe "<< str05.at(3) <<endl;
-cout << "Länge des Strings " << str05.size() <<endl;
+cout << "LÃ¤nge des Strings " << str05.size() <<endl;
 system("pause");
 
 }
