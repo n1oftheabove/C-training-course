@@ -1,4 +1,4 @@
-//folgendes Programm ist nicht lauffähig, class Student (mit Konstruktor, Destrukto, Attribute) ist nicht definiert
+//following code doesn't run, class Student is not defined
 
 
 int main(){
@@ -35,7 +35,7 @@ char jn = 'n';
 int i = 0, n;
 do{
 	st[i] = new Student;		//erzeugt Zeiger auf Student-Objekt
-	(st[i])->eingabe();			// mit Pfeil-Operator, da st Zeiger. Runde klammer nicht unbedingt nötig
+	(st[i])->eingabe();			// mit Pfeil-Operator, da st Zeiger. Runde klammer nicht unbedingt nÃ¶tig
 	cout << "Noch eine Datei? [j/n]"<<endl;
 	cin>>jn; getchar();
 	i++;
@@ -47,7 +47,7 @@ for(int i = 0; i < n; i++){
 	(st[i])->output();
 }
 
-//Zeiger wieder löschen
+//Zeiger wieder lÃ¶schen
 for(int i = 0; i < n; i++){
 	delete st[i];
 }
