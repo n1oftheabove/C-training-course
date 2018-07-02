@@ -17,15 +17,16 @@
  * with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <iostream>
-#include <cmath>
-#include <cstdlib>
-using namespace std;
-
 // * Programm demands a positive integer,
 // * if integer is dividable by 3, 2 is added, else 4 is subtracted. This is carried out as long 0 is reached.
 // * during this process, every value is printed as well as the steps needed
 // * if user enters a value < 0 at the beginning, an error is reported
+
+
+#include <iostream>
+#include <cmath>
+#include <cstdlib>
+using namespace std;
 
 int main()
 {
