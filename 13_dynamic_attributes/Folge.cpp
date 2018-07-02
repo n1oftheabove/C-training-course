@@ -1,8 +1,8 @@
 class Folge{
 	private:
-		int *f;	//dynamisches Attribut, soll später Array mit beliebig
+		int *f;	//dynamisches Attribut, soll spÃ¤ter Array mit beliebig
 				// vielen Elementen werden. D.h. Speicher muss zur Laufzeit 
-				// dynamisch geregelt werden. Wenn Speicher nicht mehr benötigt wird,
+				// dynamisch geregelt werden. Wenn Speicher nicht mehr benÃ¶tigt wird,
 				//muss Destruktor speicher wieder frei machen
 	public:
 		Folge(int size){ //Konstruktor
