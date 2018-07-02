@@ -4,7 +4,7 @@ using namespace std;
 
 
 //es gibt Konstruktoren und aber auch DESTRUKTOREN
-	//der zugehörige Destruktor zum Konstruktor hat den gleichen Namen
+	//der zugehÃ¶rige Destruktor zum Konstruktor hat den gleichen Namen
 
 
 class Student{
@@ -41,8 +41,8 @@ int main(void){
 		cout << "------Block 103 -------" <<endl;
 		class Student x(1934, 123);
 		x.output();
-	};	//ab hier ist x nicht mehr gültig.
-	// Destruktor für Student wird genau dann aufgerufen, wenn der Gültigkeitsbereich verlassen wird.
+	};	//ab hier ist x nicht mehr gÃ¼ltig.
+	// Destruktor fÃ¼r Student wird genau dann aufgerufen, wenn der GÃ¼ltigkeitsbereich verlassen wird.
 	// das leert den Speicher -> Programm wird schneller ab hinreichend komplexen Programmen
 	cout << "------Block 103 -------" <<endl;
 
@@ -62,5 +62,5 @@ cout << "jahrgang:    "<<jahrgang<< "Matrikelnummer:   "<<mat_nr<<endl;
 }
 
 
-// variablen werden zur Laufzeit aus dem Speicher gelöscht, wenn beim Compilieren festgestellt wurde, dass im restlichen Code die Variable nicht mehr gebraucht wird. Java hat dafür einen Garbage-Collector (der aber eben auch ressourcen verbraucht), in C++ muss man darüber selbst den überblick behalten
+// variablen werden zur Laufzeit aus dem Speicher gelÃ¶scht, wenn beim Compilieren festgestellt wurde, dass im restlichen Code die Variable nicht mehr gebraucht wird. Java hat dafÃ¼r einen Garbage-Collector (der aber eben auch ressourcen verbraucht), in C++ muss man darÃ¼ber selbst den Ã¼berblick behalten
 //destruktor stellt also speicher frei, den dynamische objekte beansprucht haben
