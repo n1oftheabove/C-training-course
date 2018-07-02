@@ -9,16 +9,16 @@ using namespace std;
 
 // Grundlagen zur Klassen
 	//Prozedurale (oder auch strukturierte/imperative) Programmierung:
-		// *FUNKTION schreiben, der Wert(e) (DATEN) eingegeben werden, und die Wert zurückgibt
-		// *Lösung des Problems heißt Algorithmus
+		// *FUNKTION schreiben, der Wert(e) (DATEN) eingegeben werden, und die Wert zurÃ¼ckgibt
+		// *LÃ¶sung des Problems heiÃŸt Algorithmus
 	//Objektorientierte Programmierung
 		//Ziel: Daten und Funktion zu einer Einheit zusammenzufassen
 		//Funktionen fremder Objekte ist es nicht erlaubt, diese Daten zu manipulieren
 		//Eigentlich Entprechung mit Objekten in der realen Welt:
 			//OBJEKT Auto: DATEN Farbe, Leistung, Geschwindigkeit, Gewicht,... METHODEN bremsen(), lenken(), hupen(), fahren()
-		//KLASSEN: Zur Verwaltung von gleichartigen Objekten. Autobeispiel: Die Klasse wäre etwa der Konstruktionsplan des Autos
-			//sind Baupläne für Objekte, welche erst zur Laufzeit des Programms als Instanz erstellt werden.
-			//z.b. können zwei bestimmte Autos mit individuellen Eigenschaften INSTANZEN von "class Auto" sein
+		//KLASSEN: Zur Verwaltung von gleichartigen Objekten. Autobeispiel: Die Klasse wÃ¤re etwa der Konstruktionsplan des Autos
+			//sind BauplÃ¤ne fÃ¼r Objekte, welche erst zur Laufzeit des Programms als Instanz erstellt werden.
+			//z.b. kÃ¶nnen zwei bestimmte Autos mit individuellen Eigenschaften INSTANZEN von "class Auto" sein
 			// belegt noch keinen Speicher als solche, sondern erst, wenn ein Objekt dieser Klasse instanziert haben
 			// strukturen sind auch schon Klassen
 		
@@ -39,4 +39,4 @@ using namespace std;
 			std::vector<Personal> zeitarbeiter(100);		//erzeugt 100 Objekte der Klasse Personal
 			std::vector<Personal> festanstellung;			//leerer Vektor der Klasse Personal
 			Personal cStyleArray[20];						//20 Objekte der Klasse Personal, in C++ nicht empfohlen!
-				//Objekte können auch zur Laufzeit erzeugt werden, das aber mit Bedacht einsetzen!
+				//Objekte kÃ¶nnen auch zur Laufzeit erzeugt werden, das aber mit Bedacht einsetzen!
