@@ -7,13 +7,13 @@ using namespace std;
 
 class Folge{
 private:
-	//int ff[];	//Ein Array von floats. Angenommen, Elementeanzahl möchte man dynamisch machen, geht nicht! Also: Pointer
+	//int ff[];	//Ein Array von floats. Angenommen, Elementeanzahl mÃ¶chte man dynamisch machen, geht nicht! Also: Pointer
 	int* ff;	//Pointer-Definition, oder auch int *ff
 	int n;
 public:
 	Folge(int size){   //KONSTRUKTOR, versieht 
 	n = size;
-	ff = new int[size];		//Dieser Konstruktor erstellt dann das wirkliche Array. Der nötige Speicherplatz kann zur Laufzeit geändert werden. 
+	ff = new int[size];		//Dieser Konstruktor erstellt dann das wirkliche Array. Der nÃ¶tige Speicherplatz kann zur Laufzeit geÃ¤ndert werden. 
 	}
 	void print();
 };
