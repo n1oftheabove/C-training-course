@@ -31,8 +31,8 @@ public:
 	void getr_w(){
 		char select;
 		cout << "[t] - Tee (90 cent)" << endl;
-		cout << "[k] - Kaffee (1.20 €)" << endl;
-		cout << "[c] - Cappuccino (2.40 €)" << endl;
+		cout << "[k] - Kaffee (1.20 â‚¬)" << endl;
+		cout << "[c] - Cappuccino (2.40 â‚¬)" << endl;
 		cout << "[0] - Zurueck zum MENUE"<<endl;
 		cin >> select;
 		switch(select){
@@ -52,7 +52,7 @@ public:
 		switch(preisint){
 		case 0: cout << "Sie haben Tee gewaehlt" << endl;
 			break;
-		case 1: cout << "Sie haben Kaffee gewählt" << endl;
+		case 1: cout << "Sie haben Kaffee gewÃ¤hlt" << endl;
 			break;
 		case 2: cout << "Sie haben Cappuccino gewaehlt"<<endl;
 			break;
