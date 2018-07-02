@@ -4,7 +4,7 @@
 #include <string.h>
 #include <cstdlib>
 #include <math.h>
-#define PI 3.14159265359; // globale Konstante definieren
+#define PI 3.14159265359; // define global constant
 
 using namespace std;
 
@@ -30,7 +30,7 @@ public:
 		cout<<"center: "<< p.x_coor << "(X), " << p.y_coor << "(Y)"<<endl;
 		}
 	double area(){
-		return pow(radius,2) * PI;		//* davor wird als Zeiger interpretiert!!!
+		return pow(radius,2) * PI;		//be aware: with * directly before  variable is interpreted as pointer
 		}
 	double circumstance(){
 		return radius * 2 * PI;
@@ -56,20 +56,20 @@ int whereispoint(double x1, double y1, double x2,double y2, double rc);
 
 //class Team{
 //public:
-//	int rückennummer;
+//	int rÃ¼ckennummer;
 //	char vorname;
 //	char name;
 //	char position;
 //	int alter;
-//	int einsätze;
+//	int einsÃ¤tze;
 //	int tore;
 //	void output(){
-//		cout<< "Rückennummer: " <<rückennummer<<endl;
+//		cout<< "RÃ¼ckennummer: " <<rÃ¼ckennummer<<endl;
 //		cout<< "Vorname: " <<vorname<<endl;
 //		cout<< "Name: " <<name<<endl;
 //		cout<< "Position: " <<position<<endl;
 //		cout<< "Alter: " <<alter<<endl;
-//		cout<< "Einsätze: " <<einsätze<<endl;
+//		cout<< "EinsÃ¤tze: " <<einsÃ¤tze<<endl;
 //		cout<< "Tore: " <<tore<<endl;
 //	}
 //};
@@ -78,33 +78,33 @@ int main(){
 
 Circle c1;
 Point p1;	// Kreismittelpunkt
-Point p2; //Punkt, der überprüft werden soll
+Point p2; //Punkt, der Ã¼berprÃ¼ft werden soll
 p1.x_coor = 0;
 p1.y_coor = 0;
 p2.x_coor = 0;
 p2.y_coor = 0;
-c1.p = p1; // Wichtig! Zu c1 gehört ja noch .p!
+c1.p = p1; // Wichtig! Zu c1 gehÃ¶rt ja noch .p!
 
 cout << "Geben Sie die x-Koordinate des Kreismittelpunktes an.\n" <<endl;
 if(!(cin >> p1.x_coor)){
-cout << "ungültige Eingabe" <<endl;
+cout << "ungÃ¼ltige Eingabe" <<endl;
 };
 cout << "Geben Sie die y-Koordinate des Kreismittelpunktes an.\n" <<endl;
 if(!(cin >> p1.y_coor)){
-cout << "ungültige Eingabe" <<endl;
+cout << "ungÃ¼ltige Eingabe" <<endl;
 };
 cout << "Geben Sie den Radius des Kreises an.\n" <<endl;
 if(!(cin>> c1.radius)){
-cout << "ungültige Eingabe" <<endl;
+cout << "ungÃ¼ltige Eingabe" <<endl;
 };
-cout << "Geben Sie jetzt einen Punkt an! Ich werde überprüfen, ob dieser auf, in oder außerhalb des Kreises liegt.\n" <<endl;
+cout << "Geben Sie jetzt einen Punkt an! Ich werde Ã¼berprÃ¼fen, ob dieser auf, in oder auÃŸerhalb des Kreises liegt.\n" <<endl;
 cout << "x-Koordinate des Punktes?" << endl;
 if(!(cin >> p2.x_coor)){
-cout << "ungültige Eingabe" <<endl;
+cout << "ungÃ¼ltige Eingabe" <<endl;
 };
 cout << "y-Koordinate des Punktes?" << endl;
 if(!(cin >> p2.y_coor)){
-cout << "ungültige Eingabe" <<endl;
+cout << "ungÃ¼ltige Eingabe" <<endl;
 };
 
 //switch (whereispoint(p1.x_coor, p1.y_coor, p2.x_coor, p2.y_coor, c1.radius)){
