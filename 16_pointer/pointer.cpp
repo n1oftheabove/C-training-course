@@ -25,19 +25,19 @@ cout << "&ptr " << &ptr << endl;	//Adresse des Pointers
 
 *ptr = 0;
 
-cout << ival <<endl;	// gibt 0 aus, da ptr auf Speicher von ival referenzierte und vorher mit *ptr=0 gelöscht wurde
+cout << ival <<endl;	// gibt 0 aus, da ptr auf Speicher von ival referenzierte und vorher mit *ptr=0 gelÃ¶scht wurde
 system("pause");
 
 
-//Adresse von Zeigern überprüfen! Verwendung von undefinierten Zeigern führt zu Speicherzugriff-Fehlern
-//Hier ein Beispiel für hängender Zeiger:
+//Adresse von Zeigern Ã¼berprÃ¼fen! Verwendung von undefinierten Zeigern fÃ¼hrt zu Speicherzugriff-Fehlern
+//Hier ein Beispiel fÃ¼r hÃ¤ngender Zeiger:
 
 int * pPointer = new int;		//Pointer vom Typ integer wird angelegt
 	cout << pPointer;			// Zeigt die Speicheradresse des Zeigers im Heap an
 	delete pPointer;			// macht die Speicher wieder frei
 	cout << pPointer;			// zeigt die Speicheradresse (des nun freien Speichers) an. DANGLING POINTER
 	
-	// *pPointer = 10;			// erneuter Zugriff auf diesen Pointer kann jetzt einen fatalen Fehler auslösen
+	// *pPointer = 10;			// erneuter Zugriff auf diesen Pointer kann jetzt einen fatalen Fehler auslÃ¶sen
 	pPointer = 0;				// guter C-Code: Pointer wird Nullpointer gesetzt, ist jetzt kein DP mehr.
 
 //mit rohen Zeigern durch rohe Arrays iterieren
