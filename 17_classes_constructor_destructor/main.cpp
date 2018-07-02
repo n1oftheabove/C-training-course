@@ -3,7 +3,7 @@
 using namespace std;
 
 struct Applikation{
-	Applikation(){
+	Applikation(){			// here the constructor
 		cout << "Applikation wird geladen ...\n"<<endl;
 		run();
 		}
@@ -11,7 +11,7 @@ struct Applikation{
 		for (int i=0; i<3; i++)
 		cout << "Applikation wird ausgeführt...\n)"<<endl;
 		}
-	~Applikation(){
+	~Applikation(){			// here the destructor
 	cout << "Applikation wird beendet... Tschüss\n"<<endl;
 	}
 };
