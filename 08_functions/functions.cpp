@@ -15,9 +15,9 @@ using namespace std;
 
 int main(){
 
-//lokale Variable in main (nur dort gültig)
+//lokale Variable in main (nur dort gÃ¼ltig)
 	int lok_main_var=1;
-	int glob_var=1;				//überdeckt globale Variable
+	int glob_var=1;				//Ã¼berdeckt globale Variable
 	int result=0;	
 	result = lok_main_var + ::glob_var	// :: ist der scope resolution operator, weist darauf hin, dass auf globale Variable referenziert wird
 
@@ -28,14 +28,14 @@ system("Pause");
 return 0;
 }
 
-	//DEFINIEREN simpler Funktion, kommt eigentlich in Extra quelldatei. Ist dem Programmierer häufig verborgen
+	//DEFINIEREN simpler Funktion, kommt eigentlich in Extra quelldatei. Ist dem Programmierer hÃ¤ufig verborgen
 		void simple_function(){
-			cout << "Funktion bei der Ausführung\n";
+			cout << "Funktion bei der AusfÃ¼hrung\n";
 			}
 
-		void area_of_disk(double radius){   // Wenn Funktion mit Berechnung fertig, werden alle Variablen auf dem Stack gelöscht
-											//Stack = Speicherbereich für lokale Variablen des aktuellen Gültigkeitsbereichs
+		void area_of_disk(double radius){   // Wenn Funktion mit Berechnung fertig, werden alle Variablen auf dem Stack gelÃ¶scht
+											//Stack = Speicherbereich fÃ¼r lokale Variablen des aktuellen GÃ¼ltigkeitsbereichs
 			const double PI = 3.141592653;
 			double A = PI * radius * radius;
-			cout << "Fläche des Kreises: " << A << endl;
+			cout << "FlÃ¤che des Kreises: " << A << endl;
 			}
