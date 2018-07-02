@@ -12,7 +12,7 @@ private:
 	double y;
 	//Methodendeklaration
 public:
-	Point(double px, double py){   //KONSTRUKTOR: Methode ohne Rückgabewert (obwohl nicht void davor steht),
+	Point(double px, double py){   //KONSTRUKTOR: Methode ohne RÃ¼ckgabewert (obwohl nicht void davor steht),
 									// muss gleich benannt sein wie Klasse
 			x=px; y=py;
 	}
