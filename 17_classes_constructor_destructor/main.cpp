@@ -9,10 +9,10 @@ struct Applikation{
 		}
 	void run(){
 		for (int i=0; i<3; i++)
-		cout << "Applikation wird ausgeführt...\n)"<<endl;
+		cout << "Applikation wird ausgefÃ¼hrt...\n)"<<endl;
 		}
 	~Applikation(){
-	cout << "Applikation wird beendet... Tschüss\n"<<endl;
+	cout << "Applikation wird beendet... TschÃ¼ss\n"<<endl;
 	}
 };
 
