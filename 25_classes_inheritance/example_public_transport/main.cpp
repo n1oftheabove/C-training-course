@@ -15,15 +15,15 @@ int main(){
 	v2->info();
 	v3->info();
 
-	//schoen w‰re jetzt cout << *v << endl;
-	// -> ‹berladung
+	//schoen w√§re jetzt cout << *v << endl;
+	// -> √úberladung
 	cout << v1 << endl;
 	cout << v2 << endl;
 	cout << v3 << endl;
 	//cout << *v << endl;
 
 	bool b = v1 < v2;
-cout << "v1 < v2: " << b << endl;
+	cout << "v1 < v2: " << b << endl;
 
 	b = (v1 > v2);
 	cout << "v1 > v2: " << b << endl;
