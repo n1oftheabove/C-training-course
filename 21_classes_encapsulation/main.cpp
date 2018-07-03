@@ -16,7 +16,7 @@ int main(){
 	int umfang = r.getUmfang();
 	cout << "Umfang = " << umfang << endl;
 	int flaeche = r.getFlaeche();
-	cout << "Fläche = " << flaeche << endl;
+	cout << "FlÃ¤che = " << flaeche << endl;
 	double diagonale = r.getDiagonale();
 	cout << "Diagonale = " << diagonale << endl;
 	if (r.isQuadrat()){cout << "Ihr Rechteckt ist ein Quadrat"<<endl;}
