@@ -1,7 +1,7 @@
 #include "bus.h"
 
 Bus::Bus(int linie, string fahrer, string start, string ziel, int anzahlSitzplaetze) : Verkehrsmittel(linie,fahrer,start,ziel){
-	//Konstruktor ruft standard konstruktor der übergeordneten Klasse auf
+	//Konstruktor ruft standard konstruktor der Ã¼bergeordneten Klasse auf
 	setAnzahlSitzplaetze(anzahlSitzplaetze);	
 }
 			
