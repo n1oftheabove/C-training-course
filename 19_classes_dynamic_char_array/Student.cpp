@@ -9,18 +9,18 @@ class Student{
 		char *name, *vorname; //dynamische Attribute
 		int mat_nr; //nicht dynamisch
 	public:
-		Student(){};//STANDARDKONSTRUKTOR
-		Student(char n[20], char vn[20], int m){//KONSTRUKTOR
-			name = new char[DIM];	// Speicher der Größe 2 Byte * 20 wird reserviert
+		Student(){};						//STANDARDKONSTRUKTOR
+		Student(char n[20], char vn[20], int m){		//KONSTRUKTOR
+			name = new char[DIM];				// Speicher der GrÃ¶ÃŸe 2 Byte * 20 wird reserviert
 			vorname = new char[DIM];
-			strcpy_s(name,DIM-1,n);		// strcpy_s(ZIEL, ANZAHL ELEMENTE DIE KOPIERT WERDEN SOLLEN -1, QUELLE)
+			strcpy_s(name,DIM-1,n);				// strcpy_s(ZIEL, ANZAHL ELEMENTE DIE KOPIERT WERDEN SOLLEN -1, QUELLE)
 			strcpy_s(vorname, DIM-1, vn);
 			mat_nr = m;
 			};
 		~Student(){//DESTRUKTOR
-			cout << "Ein Objekt wird nicht benötigt und der SB wird freigegeben"<<endl;
-			delete [] name; // Speicher der Größe 2*20 Bytes wird freigegeben
-			delete [] vorname;	// Speicher der Größe 2*20 Bytes wird freigegeben
+			cout << "Ein Objekt wird nicht benÃ¶tigt und der SB wird freigegeben"<<endl;
+			delete [] name; 				// Speicher der GrÃ¶ÃŸe 2*20 Bytes wird freigegeben
+			delete [] vorname;				// Speicher der GrÃ¶ÃŸe 2*20 Bytes wird freigegeben
 		};
 		void output();
 		void eingabe();
