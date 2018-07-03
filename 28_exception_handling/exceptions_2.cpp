@@ -5,8 +5,8 @@
 #include<vector>
 using namespace std;
 
-//Exception-Klassen sind ganz normale Klassen und kˆnnen auch abgeleitet werden
-//kˆnnen von Programmierer erstellt werden und es gibt standard Ausnahmeklassen
+//Exception-Klassen sind ganz normale Klassen und k√∂nnen auch abgeleitet werden
+//k√∂nnen von Programmierer erstellt werden und es gibt standard Ausnahmeklassen
 
 class eMathException{};	//leere Klasse
 class eDivisionByZero : public eMathException{};
@@ -21,7 +21,7 @@ class MyError{
 		MyError(const ERR err): err_code((int)err){		/*Konstruktor, erwartet Fehlercode
 				 von ERR. err wird zu int gecasted, damit aus enum-Konstante int wird.
 				 static_cast<int> ginge auch*/
-			msg.push_back("Divison by zero"); //h‰ngt an Ende von vector Eintrag dran
+			msg.push_back("Divison by zero"); //h√§ngt an Ende von vector Eintrag dran
 			msg.push_back("Input Dividend");
 			msg.push_back("Input Divisor");
 			}
@@ -32,8 +32,8 @@ class MyError{
 
 //
 //wenn kein catch auf den geworfenen Typ passt, wird intern die Funktion terminate aufgerufen
-// catch(...) f‰ngt unbekannte bzw. alternative Exceptions auf, um terminate zu verhindern
-// im catch-Block l‰sst sich auch Ausnahme weiterleiten
+// catch(...) f√§ngt unbekannte bzw. alternative Exceptions auf, um terminate zu verhindern
+// im catch-Block l√§sst sich auch Ausnahme weiterleiten
 
 
 //Beispiel exception handling beim Wurzelziehen
@@ -69,7 +69,7 @@ double division(int &x, int &y){
 }
 void input_values(int &x, int &y){
 	cout << "Dividend: ";
-	//cin >> x; //woher weiﬂ ich, dass der Benutzer eine richrtige Zahl eingibt?
+	//cin >> x; //woher wei√ü ich, dass der Benutzer eine richrtige Zahl eingibt?
 	
 	if (!cin >>x) {
 		throw MyError(MyError::ERR::INP1);
@@ -110,9 +110,9 @@ int main(){
 	double a = 35; double b = 7; double c;
 	try{
 	c = calculate(a,b);
-	//kommende catch Blˆcke werden nacheinander abgehandelt. Wird ein exception gefangen,
+	//kommende catch Bl√∂cke werden nacheinander abgehandelt. Wird ein exception gefangen,
 	//wird auch nicht weiter gesucht. Deswegen: Spezielle Exceptions zuerst schreiben,
-	// allgemeine sp‰ter
+	// allgemeine sp√§ter
 	} catch (const eDivisionByZero &ex)//exception variable soll nicht modifiziert werden
 	{
 		cout << "Dividieren durch 0 ist nicht erlaubt" << endl;	
@@ -131,4 +131,4 @@ int main(){
 	system("pause");
 	return 0;
 }
-//beachten auch: In try-Blˆcken erkl‰rte Variablen wie gewohnt auch nur dort sichtbar
+//beachten auch: In try-Bl√∂cken erkl√§rte Variablen wie gewohnt auch nur dort sichtbar
