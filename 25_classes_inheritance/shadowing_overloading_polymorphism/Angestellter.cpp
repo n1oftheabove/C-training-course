@@ -2,9 +2,9 @@
 
 
 //Was verstehen sie unter den folgenden Begriffen?
-	//Overloading (Überladen)
-	//Shadowing, Gültigkeitsbereich, Polymorphism, eine Methode Redefinieren
-	//Namensauflösung
+	//Overloading (Ãœberladen)
+	//Shadowing, GÃ¼ltigkeitsbereich, Polymorphism, eine Methode Redefinieren
+	//NamensauflÃ¶sung
 Angestellter::Angestellter(unsigned int zu, string n,unsigned int pn, unsigned int g){
 	Personal(n,pn,g);
 	setZulagen(zu);//zulagen = zu;
