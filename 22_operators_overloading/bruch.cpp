@@ -16,7 +16,7 @@ Bruch::Bruch(int a, int b){
 			cout << "Der Nenner darf nicht null sein! " << endl;
 				b=1;
 				}
-		else{ //vor dem setten gleich kürzen
+		else{ //vor dem setten gleich kÃ¼rzen
 				int temp = min(a,b);
 					for(int i = temp; i > 0; i--){
 						if(a%i==0 && b%i==0){
