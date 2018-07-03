@@ -30,8 +30,8 @@ public:
 	void getr_w(){
 		char select;
 		cout << "[t] - Tee (90 cent)" << endl;
-		cout << "[k] - Kaffee (1.20 €)" << endl;
-		cout << "[c] - Cappuccino (2.40 €)" << endl;
+		cout << "[k] - Kaffee (1.20 â‚¬)" << endl;
+		cout << "[c] - Cappuccino (2.40 â‚¬)" << endl;
 		cin >> select;
 		switch(select){
 			case 't': preis = 0.9;
@@ -49,7 +49,7 @@ public:
 		switch(preisint){
 		case 0: cout << "Sie haben Tee gewaehlt" << endl;
 			break;
-		case 1: cout << "Sie haben Kaffee gewählt" << endl;
+		case 1: cout << "Sie haben Kaffee gewÃ¤hlt" << endl;
 			break;
 		case 2: cout << "Sie haben Cappuccino gewaehlt"<<endl;
 			break;
@@ -100,8 +100,8 @@ int main(){
 while(!(select==0)){
 cout << "Hallo!" << endl;
 cout << "[1] - Geld einwerfen" << endl;
-cout << "[2] - Getraenk wählen" << endl;
-cout << "[3] - Bestand prüfen" << endl;
+cout << "[2] - Getraenk wÃ¤hlen" << endl;
+cout << "[3] - Bestand prÃ¼fen" << endl;
 cout << "[4] - Getraenk entnehmen" << endl;
 cout << "[5] - Restgeld entnehmen " << endl;
 cout << "[0] - Programm beenden " << endl;
@@ -120,7 +120,7 @@ cin >> select;
 		break;
 	case 0: return 1;
 		break;
-	default: cout << "ungültige Eingabge" << endl;
+	default: cout << "ungÃ¼ltige Eingabge" << endl;
 		}
 	}
 return 0;
