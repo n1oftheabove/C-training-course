@@ -3,7 +3,7 @@
 	//rad muss nicht neu erfunden werden
 
 #include <iostream>
-#include <algorithm> //z.b. für find
+#include <algorithm> //z.b. fÃ¼r find
 
 using namespace std;
 
@@ -21,11 +21,11 @@ int mainx(){
 	if (found != zahlen + 9){
 		cout << "Gefunden: " << found << endl;
 	} else {
-		cout << "Nichtgefunden: " << endl; //wäre etwas nicht initialisiertes
+		cout << "Nichtgefunden: " << endl; //wÃ¤re etwas nicht initialisiertes
 	}
 
 	int zahlen2[9] = {3, 8, 1, 9, 5, 6, 4, 2, 9};
-	// zahlen2 soll beim Sorten aber nicht überschrieben werden
+	// zahlen2 soll beim Sorten aber nicht Ã¼berschrieben werden
 	int zahlen3[8];	
 	copy(zahlen2, zahlen2 +9, zahlen3);
 
