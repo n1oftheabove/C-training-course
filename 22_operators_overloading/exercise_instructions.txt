@@ -1,0 +1,7 @@
+Erzeugen Sie eine Klasse Bruch zur Verwendung von Bruchrech­nung unter Beachtung der folgenden Punkte:
+    • Zähler und Nenner sind ganzzahlig
+    • Der Nenner darf nicht 0 sein 
+    • Der Konstruktor soll den Bruch initialisieren,  der Standard-Konstruktor soll den Bruch 1/1 erzeugen
+    • Die Klasse soll Methoden zur Realisierung der Grundrechen­arten(Addition, Subtraktion, Multiplikation, Division) enthalten
+    • Es soll eine Methode info() zur Darstellung des Bruchs auf der Konsole, z. B. 2/3 implementiert werden. Unechte Brüche sollen als gemischte Brüche dargestellt werden, z.B. 1 2/3 anstatt 5/3.
+    • Erweitern Sie die Klasse derart, dass Brüche schon bei ihrer Erzeugung gekürzt werden, so dass Zähler und Nenner teilerfremd sind
