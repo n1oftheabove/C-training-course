@@ -1,4 +1,4 @@
-// Beispiel für rekursion: Fakultaet
+// Beispiel fÃ¼r rekursion: Fakultaet
 
 #include <iostream>
 
